@@ -1,7 +1,15 @@
 import 'react-toastify/dist/ReactToastify.css'
+import useRouterElement from './useRouterElement'
+import { ToastContainer, toast } from 'react-toastify'
 
 function App() {
-  return <div>hello</div>
+  const router = useRouterElement()
+  return (
+    <div>
+      {router}
+      <ToastContainer />
+    </div>
+  )
 }
 
 export default App
